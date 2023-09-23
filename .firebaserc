@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "myroomsadministrator": {
+      "hosting": {
+        "MyRoomsAdministrator": [
+          "myroomsadministrator"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "myroomsadministrator"
+  }
+}
