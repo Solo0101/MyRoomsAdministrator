@@ -61,6 +61,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { MyProfileComponent } from './pages/my-profile/my-profile.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { AdminDashboardComponent } from './pages/admin-dashboard/admin-dashboard.component';
+import { NavbarComponent } from './shared/components/navbar/navbar.component';
 
 
 @NgModule({
@@ -71,7 +72,8 @@ import { AdminDashboardComponent } from './pages/admin-dashboard/admin-dashboard
     DashboardComponent,
     MyProfileComponent,
     SettingsComponent,
-    AdminDashboardComponent
+    AdminDashboardComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
