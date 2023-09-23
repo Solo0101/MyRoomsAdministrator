@@ -55,11 +55,23 @@ import { MatTreeModule } from '@angular/material/tree';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
+import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { LoginComponent } from './pages/login/login.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { MyProfileComponent } from './pages/my-profile/my-profile.component';
+import { SettingsComponent } from './pages/settings/settings.component';
+import { AdminDashboardComponent } from './pages/admin-dashboard/admin-dashboard.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SignUpComponent,
+    LoginComponent,
+    DashboardComponent,
+    MyProfileComponent,
+    SettingsComponent,
+    AdminDashboardComponent
   ],
   imports: [
     BrowserModule,
