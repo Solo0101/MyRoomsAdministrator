@@ -18,24 +18,25 @@ const routes: Routes = [
     canActivate: [authGuard]
   },
   {
-    path: '/admin',
+    path: 'admin-dashboard',
     component: AdminDashboardComponent,
     canActivate: [authGuard, adminGuard]
   },
   {
-    path: '/login',
+    path: 'login',
     component: LoginComponent,
   },
   {
-    path: '/sign-up',
+    path: 'sign-up',
     component: SignUpComponent
   },
   {
-    path: '/settings',
-    component: SettingsComponent
+    path: 'settings',
+    component: SettingsComponent,
+    canActivate: [authGuard]
   },
   {
-    path: '/my-profile',
+    path: 'my-profile',
     component: MyProfileComponent,
     canActivate: [authGuard]
   },

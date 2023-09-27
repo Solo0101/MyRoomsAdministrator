@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { environment } from '../environments/environment';
+import { environment } from '@env/environment';
 
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideAuth,getAuth } from '@angular/fire/auth';
@@ -61,7 +61,10 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { MyProfileComponent } from './pages/my-profile/my-profile.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { AdminDashboardComponent } from './pages/admin-dashboard/admin-dashboard.component';
-import { NavbarComponent } from './shared/components/navbar/navbar.component';
+import { SidenavComponent } from '@shared/components/sidenav/sidenav.component';
+import { SidenavButtonComponent } from '@shared/components/sidenav-button/sidenav-button.component';
+import { SidenavItemComponent } from '@shared/components/sidenav-item/sidenav-item.component';
+import {FlexLayoutModule} from "@angular/flex-layout";
 
 
 @NgModule({
@@ -73,7 +76,9 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
     MyProfileComponent,
     SettingsComponent,
     AdminDashboardComponent,
-    NavbarComponent
+    SidenavButtonComponent,
+    SidenavComponent,
+    SidenavItemComponent
   ],
   imports: [
     BrowserModule,
@@ -127,6 +132,7 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

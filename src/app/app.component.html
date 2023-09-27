@@ -1,2 +1,2 @@
-
-<router-outlet></router-outlet>
+<app-sidenav *ngIf="showSideNav"></app-sidenav>
+<router-outlet *ngIf="!showSideNav"></router-outlet>
