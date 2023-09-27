@@ -10,6 +10,7 @@ import {menu} from "@core/data/menu";
   templateUrl: './sidenav.component.html',
   styleUrls: ['./sidenav.component.scss'],
 })
+
 export class SidenavComponent implements OnDestroy {
   public opened = true;
   private mediaWatcher: Subscription;

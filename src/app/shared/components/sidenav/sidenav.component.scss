@@ -2,7 +2,8 @@ mat-sidenav-container,
 mat-sidenav-content,
 mat-sidenav {
   /* Using 100vh causes double scrollbars to appear on some devices */
-  height: 90vh;
+  height: 100vh;
+
 }
 
 .avatar {
@@ -14,28 +15,19 @@ mat-sidenav {
 
 .name {
   margin-top: 8px;
+  margin-bottom: 0;
   font-weight: normal;
 }
 
 .designation {
-  margin-top: 2px;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: lightgrey;
-}
 
-mat-divider {
-  margin-top: 16px;
-  margin-bottom: 16px;
-  background-color: rgba(255, 255, 255, 0.5);
 }
 
 mat-sidenav-container {
   padding-bottom: 10px;
   border-bottom: 1px solid #808080;
-}
-
-body {
-  font-family: "Times New Roman", Times, serif !important;
 }
 
 .mat-toolbar.mat-primary {
@@ -53,7 +45,7 @@ body {
 }
 
 .mat-sidenav {
-  width: 220px;
+  width: 200px;
   display: flex;
 }
 
@@ -96,7 +88,7 @@ button.menu-button {
   padding-right: 10px;
 }
 
-::ng-deep button.mat-menu-item {
+button.mat-menu-item {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -120,7 +112,7 @@ button.menu-button {
   position: relative;
 }
 
-::ng-deep div.mat-menu-panel {
+div.mat-menu-panel {
   min-width: 112px;
   /** set width to 500px */
   max-width: 500px;
@@ -138,7 +130,7 @@ button.menu-button {
 
 hr {
   color: black;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .white-space-normal {
@@ -159,10 +151,7 @@ hr {
 }
 
 .profile-block {
-  padding-left: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-top: 25px;
+  padding: 10px 25px 10px 15px;
 }
 
 .logout-button {
@@ -208,7 +197,7 @@ hr {
 /* Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .mat-sidenav {
-    width: 250px;
+    width: 200px;
   }
 
   /*1rem = 16px*/
@@ -217,7 +206,7 @@ hr {
 /* Extra large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .mat-sidenav {
-    width: 300px;
+    width: 200px;
   }
 
   /*1rem = 16px*/
@@ -225,7 +214,7 @@ hr {
 
 @media only screen and (min-width: 1400px) {
   .mat-sidenav {
-    width: 400px;
+    width: 250px;
   }
 
   /*1rem = 16px*/
@@ -233,7 +222,7 @@ hr {
 
 @media only screen and (min-width: 1600px) {
   .mat-sidenav {
-    width: 500px;
+    width: 300px;
   }
 
   /*1rem = 16px*/
