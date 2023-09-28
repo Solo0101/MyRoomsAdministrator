@@ -62,9 +62,10 @@ import { MyProfileComponent } from './pages/my-profile/my-profile.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { AdminDashboardComponent } from './pages/admin-dashboard/admin-dashboard.component';
 import { SidenavComponent } from '@shared/components/sidenav/sidenav.component';
-import { SidenavButtonComponent } from '@shared/components/sidenav-button/sidenav-button.component';
+import { AuthButtonComponent } from '@shared/components/auth-button/auth-button.component';
 import { SidenavItemComponent } from '@shared/components/sidenav-item/sidenav-item.component';
 import {FlexLayoutModule} from "@angular/flex-layout";
+import { NavbarComponent } from './shared/components/navbar/navbar.component';
 
 
 @NgModule({
@@ -76,9 +77,10 @@ import {FlexLayoutModule} from "@angular/flex-layout";
     MyProfileComponent,
     SettingsComponent,
     AdminDashboardComponent,
-    SidenavButtonComponent,
+    AuthButtonComponent,
     SidenavComponent,
-    SidenavItemComponent
+    SidenavItemComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

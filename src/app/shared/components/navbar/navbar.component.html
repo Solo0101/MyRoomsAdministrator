@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="sidenav.toggle()" class="menu-button" fxHide fxShow.lt-md>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span [ngClass]="{ 'hidden': !opened }">{{websiteTitle}}</span>
+  <span>
+  </span>
+  <span class="head-menu"></span>
+  <div class="row">
+    <button mat-button (click)="signout()">
+      <mat-icon>logout</mat-icon> Sign Out
+    </button>
+  </div>
+</mat-toolbar>

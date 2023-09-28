@@ -1,1 +1,24 @@
-<p>login works!</p>
+
+<form class="login-form">
+  <div class="form-content-wrapper d-flex">
+  <span class="pt-5 pb-5 logo-text">{{websiteTitle}}</span>
+
+  <h1 class="pb-3 px-xl-5 align-self-start">Enter your account</h1>
+  <mat-form-field class="px-xl-5 w-100">
+    <mat-label>Enter your email</mat-label>
+    <input matInput placeholder="pat@example.com" [formControl]="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="px-xl-5 w-100">
+    <mat-label>Enter your password</mat-label>
+    <input matInput [type]="hide ? 'password' : 'text'">
+    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <app-auth-button [name]="'LOGIN'" [icon]="'login'"></app-auth-button>
+  <button mat-stroked-button color="primary">Register</button>
+  </div>
+</form>

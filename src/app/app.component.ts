@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {NavigationEnd, Router} from "@angular/router";
+// import {websiteTitle} from "@/constants";
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,8 @@ import {NavigationEnd, Router} from "@angular/router";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'MyRoomsAdministrator';
+  // title: string = websiteTitle;
+  title: string = "MyRoomsAdministrator";
   showSideNav: boolean = true;
 
   constructor(private router: Router) {

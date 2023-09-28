@@ -1,9 +1,10 @@
-import {Component, OnDestroy} from '@angular/core';
-import {NavItem} from '@core/models/nav-item.model';
-import {filter, map, Subscription} from "rxjs";
-import {Router} from "@angular/router";
+import { Component, OnDestroy } from '@angular/core';
+import { NavItem } from '@core/models/nav-item.model';
+import { filter, map, Subscription } from "rxjs";
+import { Router } from "@angular/router";
 import { MediaChange, MediaObserver } from '@angular/flex-layout';
-import {menu} from "@core/data/menu";
+import { menu } from "@core/data/menu";
+// import { websiteTitle } from "@/constants";
 
 @Component({
   selector: 'app-sidenav',
@@ -42,6 +43,9 @@ export class SidenavComponent implements OnDestroy {
   }
 
   signout() {
-    this.router.navigate(['/signin'])
+    this.router.navigate(['/login']);
   }
+
+  // protected readonly websiteTitle = websiteTitle;
+  protected readonly websiteTitle = "MyRoomsAdministrator";
 }

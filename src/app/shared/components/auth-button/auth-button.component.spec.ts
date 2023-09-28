@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SidenavButtonComponent } from './sidenav-button.component';
+import { AuthButtonComponent } from './auth-button.component';
 
 describe('SidenavButtonComponent', () => {
-  let component: SidenavButtonComponent;
-  let fixture: ComponentFixture<SidenavButtonComponent>;
+  let component: AuthButtonComponent;
+  let fixture: ComponentFixture<AuthButtonComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SidenavButtonComponent]
+      declarations: [AuthButtonComponent]
     });
-    fixture = TestBed.createComponent(SidenavButtonComponent);
+    fixture = TestBed.createComponent(AuthButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
