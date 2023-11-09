@@ -24,3 +24,14 @@
   line-height: 32px;
   box-sizing: border-box;
 }
+
+/* Small devices (phones/tablets , 992px and down) */
+@media only screen and (max-width: 1200px) {
+  .auth-input-field {
+    width: 75% !important;
+  }
+
+  .auth-title {
+    align-self: center !important;
+  }
+}

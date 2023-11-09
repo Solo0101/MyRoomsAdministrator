@@ -42,8 +42,14 @@ export class SidenavComponent implements OnDestroy {
     this.mediaWatcher.unsubscribe();
   }
 
-  signout() {
-    this.router.navigate(['/login']);
+
+  //TODO: REPAIR BROKEN FUNCTION
+  signout($myParam: string = '') {
+    const navigationDetails: string[] = ['/login'];
+    if($myParam.length) {
+      navigationDetails.push($myParam);
+    }
+    this.router.navigate(navigationDetails);
   }
 
   // protected readonly websiteTitle = websiteTitle;

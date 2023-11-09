@@ -3,19 +3,20 @@
   <div class="form-content-wrapper d-flex">
   <span class="pt-5 pb-5 logo-text">{{websiteTitle}}</span>
 
-  <h1 class="pb-3 px-xl-5 align-self-start">Enter your account</h1>
-  <mat-form-field class="px-xl-5 w-100">
-    <mat-label>Enter your email</mat-label>
+  <h1 class="pb-3 px-xl-5 align-self-start auth-title">Enter your account</h1>
+  <mat-form-field class="px-xl-5 w-100 auth-input-field">
+    <mat-label>Email</mat-label>
     <input matInput placeholder="pat@example.com" [formControl]="email" required>
-    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    <mat-error *ngIf="email.invalid">{{getEmailErrorMessage()}}</mat-error>
   </mat-form-field>
 
-  <mat-form-field class="px-xl-5 w-100">
-    <mat-label>Enter your password</mat-label>
-    <input matInput [type]="hide ? 'password' : 'text'">
+  <mat-form-field class="px-xl-5 w-100 auth-input-field">
+    <mat-label>Password</mat-label>
+    <input matInput [type]="hide ? 'password' : 'text'" [formControl]="password" required>
     <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
       <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
     </button>
+    <mat-error *ngIf="password.invalid" class="mb-3">{{getPasswordErrorMessage()}}</mat-error>
   </mat-form-field>
 
   <app-auth-button [name]="'LOGIN'" [icon]="'login'"></app-auth-button>
